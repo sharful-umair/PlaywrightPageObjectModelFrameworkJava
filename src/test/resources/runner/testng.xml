@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Object Model Framework">
+
+	<listeners>
+		<listener class-name="extentlisteners.ExtentListeners" />
+	</listeners>
+
+
+	<test name="Find New Cars Test">
+		<classes>
+			<class name="testcases.FindNewCarsTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Car Name and Price Test">
+		<classes>
+			<class name="testcases.CarNamesAndPriceTest" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
