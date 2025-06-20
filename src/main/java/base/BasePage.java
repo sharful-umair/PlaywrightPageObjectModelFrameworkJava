@@ -50,8 +50,10 @@ public class BasePage {
             }
             page.locator(selector).click();
             //log.info("Clicking on Element: " + locatorKey);
-            ExtentListeners.getExtent()
-                    .info("Clicking on Element: " + locatorKey);
+            if (ExtentListeners.getExtent() != null) {
+                ExtentListeners.getExtent().info("Clicking on Element: " + locatorKey);
+            }
+
         } catch (Throwable t) {
             //log.error("Error while clicking on Element: " + locatorKey + " - " + t.getMessage());
             ExtentListeners.getExtent()
@@ -72,8 +74,10 @@ public class BasePage {
             }
             page.locator(selector).hover();
             //log.info("Hovering over Element: " + locatorKey);
-            ExtentListeners.getExtent()
-                    .info("Hovering over Element: " + locatorKey);
+            if (ExtentListeners.getExtent() != null) {
+                ExtentListeners.getExtent()
+                        .info("Hovering over Element: " + locatorKey);
+            }
         } catch (Throwable t) {
             //log.error("Error while hovering over Element: " + locatorKey + " - " + t.getMessage());
             ExtentListeners.getExtent()

@@ -28,13 +28,13 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.1.2</version>
-<!--        <configuration>-->
-<!--          <testFailureIgnore>false</testFailureIgnore>-->
-<!--          <suiteXmlFiles>-->
-<!--            <suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>-->
-<!--          </suiteXmlFiles>-->
-<!--          <testNGArtifactName>org.testng:testng</testNGArtifactName>-->
-<!--        </configuration>-->
+        <configuration>
+          <testFailureIgnore>false</testFailureIgnore>
+          <suiteXmlFiles>
+            <suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          <testNGArtifactName>org.testng:testng</testNGArtifactName>
+        </configuration>
       </plugin>
     </plugins>
   </build>
